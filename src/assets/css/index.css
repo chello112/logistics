@@ -1,0 +1,130 @@
+/*===Navbar===*/
+
+.nav-container {
+  background: #617d98;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h3 {
+  letter-spacing: 9px;
+  color: white;
+  margin: 1rem;
+}
+
+.totalOrders {
+  font-size: large;
+  margin: 1rem;
+}
+
+.newOrderBtn {
+  background: transparent;
+  margin: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: hsl(0, 83%, 73%);
+  border: 1px solid hsl(360, 67%, 44%);
+  border-radius: 7px;
+}
+
+.newOrderBtn:hover {
+  background: hsl(0, 83%, 73%);
+  color: hsl(360, 67%, 44%);
+  border-color: hsl(0, 83%, 73%);
+  transition: all 0.3s linear;
+}
+
+/*===Dashboard===*/
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0 20px;
+}
+
+.err {
+  font-size: 50px;
+  color: red;
+}
+
+/*===Table===*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 15px;
+}
+
+th {
+  background-color: rgb(56, 109, 140);
+}
+
+td {
+  background-color: rgb(177, 182, 184);
+}
+
+.editBtn {
+  margin: 1px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+}
+
+.editBtn:hover {
+  background-color: rgb(21, 79, 185);
+  transition: all 0.3s linear;
+}
+
+.deleteBtn {
+  margin: 1px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(103, 2, 2);
+  transition: all 0.3s linear;
+}
+
+/*===Spinner===*/
+
+.loadingSpinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 65px;
+  height: 64px;
+  border: 3px solid;
+  border-color: #000 transparent rgb(244, 10, 10) transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
